@@ -8,9 +8,7 @@
 
 #hero {
     padding: 0 80px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .video {
@@ -19,12 +17,16 @@
 
 .video-preview {
     position:absolute;
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     display: flex;
-    align-items: flex-start;
     align-items: center;
-    color: white;
+    justify-content: center;
+    color: rgb(192, 56, 255);
+}
+
+.video-preview p {
+    margin-top: 10px;
 }
 
 .video-preview nav {
@@ -39,7 +41,7 @@
     transition: 0.3s;
 }
 .video-preview nav i:hover {
-    color: rgb(174, 0, 255);
+    color: rgb(192, 56, 255);
 }
 
 .video-description {
