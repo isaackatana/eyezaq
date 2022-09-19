@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
+    background-color: rgb(22, 22, 22);
 }
 
 #hero {
     padding: 0 80px;
-    
 }
 
 .video {
