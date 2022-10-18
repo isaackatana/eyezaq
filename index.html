@@ -5,94 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eyezaq</title>
-    <link rel="shortcut icon" href="imgs/Logo-icon-(Eyezaq).png" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/logo-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-
-        <div>
-            <img src="imgs/Logo-(Eyezaq).png" alt="" width="100px">
+        <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt=""></a>
         </div>
 
         <nav>
-
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="" class="active">Latest</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Tours</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
-
-            <i class=""><a href="cart.html"></a></i>
-
+            <a href=""><img src="imgs/icons/shopping-bag.png" alt=""></a>
         </nav>
-
-    </header>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col">
-                <div class="feature-img">
-                    <img src="media/bambini.png" width="750" alt="">
-                    <img src="media/play.png" class="play-btn" alt="" onclick="playVideo('media/bambini.mp4')">
-                </div>
-            </div>
-
-            <div class="col">
-
-                <div class="small-img-row">
-
-                    <div class="small-img">
-                        <img src="media/bambini.png" alt="">
-                        <img src="media/play.png" class="play-btn" alt="" onclick="playVideo('media/bambini.mp4')">
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium repellat nobis <br>tempora, veniam iusto qui consequuntur quo cum alias repellendus.</p>
-                </div>
-
-                <div class="small-img-row">
-
-                    <div class="small-img">
-                        <img src="media/bambini.png" alt="">
-                        <img src="media/play.png" class="play-btn" alt="" onclick="playVideo('media/bambini.mp4')">
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium repellat nobis <br>tempora, veniam iusto qui consequuntur quo cum alias repellendus.</p>
-                </div>
-
-                <div class="small-img-row">
-
-                    <div class="small-img">
-                        <img src="media/bambini.png" alt="">
-                        <img src="media/play.png" class="play-btn" alt="" onclick="playVideo('media/bambini.mp4')">
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium repellat nobis <br>tempora, veniam iusto qui consequuntur quo cum alias repellendus.</p>
-                </div>
-
-            </div>
-
+        
+        <div class="reg-login">
+            <button>Sign Up</button>
         </div>
 
-    </div>
-
-    <div class="video-player" id="videoPlayer">
-
-        <video width="75%" controls autoplay id="myVideo">
-            <source src="media/bambini.mp4" type="video/mp4">
-        </video>
-        <img src="media/close.png" class="close-btn" alt="" onclick="stopVideo()">
-
-    </div>
-    
-    <footer>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum corrupti sunt porro labore tempora, id itaque ducimus cum doloremque eveniet molestiae consequuntur aut consequatur adipisci ad ipsum atque alias. Odio!</p>
-    </footer>
+    </header>
 </body>
+
 <script src="main.js"></script>
 
 </html>

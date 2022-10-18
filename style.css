@@ -6,142 +6,71 @@
 }
 
 body {
-    background: rgb(59, 59, 59);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    background-color: rgb(104, 104, 104);
 }
 
 header {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 60px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0 80px 0 80px;
-    position: fixed;
-    background: rgb(59, 59, 59);
-    z-index: 99;
 }
 
-.container {
-}
-
-.container h1 {
-    padding: 60px;
-    color: rgba(225, 0, 255, 0.733);
-    font-size: 44px;
-    text-align: center;
-}
-
-.row {
-    margin: 100px 0px 0px 0px;
+.logo {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: left;
 }
 
-.col {
-    flex-basis: 50%;
-    min-width: 125px;
-}
-
-.feature-img {
-    width: 83%;
-    margin: auto;
-    position: relative;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.small-img-row {
+nav {
     display: flex;
-    background: rgba(255, 255, 255, 0.733);
-    margin: 20px 0;
-    align-items: center;
-    border-radius: 6px;
-    overflow: hidden;
-    width: 85%;
-}
-
-.small-img {
-    position: relative;
-}
-
-.small-img img {
-    width: 150px;
-}
-
-.small-img-row p {
-    margin: 20px;
-    color: rgb(59, 59, 59);
-    line-height: 22px;
-    font-size: 15px;
-}
-
-.play-btn {
-    width: 60px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-}
-
-.small-img .play-btn {
-    width: 35px;
-}
-
-.video-player {
-    width: 80%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
-video:focus {
-    outline: none;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    cursor: pointer;
+    justify-content: center;
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 nav ul li {
     list-style: none;
-    padding: 0 10px 0 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.733);
+    margin: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(104, 104, 104);
     font-weight: bold;
-    transition: 0.3s;
+    font-size: 15px;    
 }
 
-nav ul li a:hover {
-    color: rgba(225, 0, 255, 0.733);
+.reg-login {
+    display: flex;
+    align-items: center ;
+    justify-content: right;
 }
 
-nav ul li a.active {
-    color: rgba(225, 0, 255, 0.733);
+button {
+    border-color: rgb(104, 104, 104);
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    font-weight: regular;
+    font-size: 13px;
+    transition: 0.3s
 }
 
-footer {
-    width: 100%;
-    padding: 20px 80px 20px 80px;
-    background: rgba(255, 255, 255, 0.733);
-    text-align: center;
-    color: rgb(59, 59, 59);
+button:hover {
+    background: rgb(104, 104, 104);
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: regular;
+    font-size: 13px;
 }
