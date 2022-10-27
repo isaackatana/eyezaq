@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
 
 header {
     width: 100%;
-    height: 60px;
     background: rgb(104, 104, 104);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,59 +29,51 @@ nav {
     justify-content: center;
 }
 
-nav ul {
+.my-videos {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
     display: flex;
     flex-direction: row;
-}
-
-nav ul li {
-    list-style: none;
     align-items: center;
     justify-content: center;
 }
 
-nav ul li a {
+.menu a {
+    padding: 0 20px 0 20px;
     text-decoration: none;
-    margin: 20px 30px 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
     font-weight: bold;
-    font-size: 15px;    
+}
+.menu a:hover {
+    text-decoration: underline;
 }
 
-.reg-login {
+.sign-up {
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: right;
 }
 
 button {
-    border-color: rgb(104, 104, 104);
+    border-color: #fff;
+    border-style: double;
+    color: #fff;
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
     font-weight: regular;
-    font-size: 13px;
-    transition: 0.3s
+    font-size: 15px;
+    transition: 0.3s;
+    background: rgb(104, 104, 104);
 }
 
 button:hover {
-    background: rgb(104, 104, 104);
-    padding: 10px 15px 10px 15px;
-    border-radius: 25px;
-    color: #fff;
-    font-weight: regular;
-    font-size: 13px;
-}
-
-.hero {
-    width: 100%;
-    padding-top: 120px;
-    padding-bottom: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #fff;
+    color: rgb(104, 104, 104);
 }
 
 footer {
@@ -90,6 +81,7 @@ footer {
     text-align: center;
     height: 80px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -97,4 +89,20 @@ footer {
 
 .hero iframe{
     margin: 0px;
+}
+
+
+@media (max-width: 715px){
+    .menu {
+        display: none;
+    }
+
+    .my-videos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 10px;
+    }
 }
