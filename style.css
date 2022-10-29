@@ -34,7 +34,62 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 104px;
 }
+
+.my-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 104px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    padding-top: 150px;
+}
+
+.product {
+    background: rgb(104, 104, 104);
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+}
+
+.product h3 {
+    margin: 10px 0 0 0;
+}
+
+.product p {
+    margin: 10px 0 0 0;
+}
+
+.contact {
+    background: rgb(104, 104, 104);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 80%;
+}
+
+.contact h3 {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+}
+
+.contact button {
+    margin-top: 30px;
+}
+
+
 
 .menu {
     display: flex;
@@ -50,7 +105,11 @@ nav {
     font-weight: bold;
 }
 .menu a:hover {
-    text-decoration: underline;
+    color: rgb(145, 145, 145);
+}
+
+.menu a.active {
+    color: rgb(145, 145, 145);
 }
 
 .sign-up {
@@ -76,23 +135,59 @@ button:hover {
     color: rgb(104, 104, 104);
 }
 
+.newsletter {
+    background: rgb(104, 104, 104);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px 30px 80px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.newsletter input {
+    margin-top: 0;
+}
+
 footer {
     background: rgb(104, 104, 104);
-    text-align: center;
-    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media i {
+    margin: 5px;
+}
 .hero iframe{
     margin: 0px;
 }
 
+/*------------------------------*/
 
 @media (max-width: 715px){
+    header {
+        width: 100%;
+        padding: 0 15px 0 15px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
     .menu {
         display: none;
     }
@@ -102,7 +197,22 @@ footer {
         flex-direction: column;
     }
 
+    .my-products {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
     button {
         font-size: 10px;
+    }
+
+    .newsletter {
+        padding: 30px 15px 30px 15px;
+    }
+
+    footer {
+        padding: 30px 15px 30px 15px;
     }
 }
